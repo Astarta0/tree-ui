@@ -1,0 +1,55 @@
+@import 'normalize.css/normalize.css'
+@import url('https://fonts.googleapis.com/css?family=Roboto')
+@import url('https://fonts.googleapis.com/css?family=Rubik')
+
+$main-text = #333
+$grey = #858585
+$light-bg = #F7F7F7
+$accent-color = #FFD93E
+
+
+html
+    color $main-text
+    font-family: 'Roboto', sans-serif;
+    font-size 1em
+    line-height 1.4
+    background-color white
+
+body
+    height 100vh
+    margin 50px
+
+button
+    background none
+    border none
+    cursor pointer
+    outline none
+
+input
+    border none
+
+
+.btn-add-node
+    border-width 2px
+    border-style solid
+    border-color rgba(255, 217, 62, .6)
+    color $main-text
+    padding 6px 10px
+    border-radius 4px
+
+    &:hover, &:active
+        border-color rgba(255, 217, 62, 1)
+
+
+.item
+    &__input
+        margin 4px 0
+        &:focus
+            border-bottom 1px solid $grey
+
+    &__btn
+        border 1px solid $grey
+
+
+.hidden
+    display none
