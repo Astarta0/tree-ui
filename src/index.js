@@ -3,8 +3,6 @@ const ROOT_ID = 1;
 let map = {};
 let idCounter = ROOT_ID;
 
-console.log("asd");
-
 try {
     // пробуем восстановить из хранилища
     map = JSON.parse(localStorage.getItem("treeMap"));
