@@ -1,6 +1,4 @@
 @import 'normalize.css/normalize.css'
-@import url('https://fonts.googleapis.com/css?family=Roboto')
-@import url('https://fonts.googleapis.com/css?family=Rubik')
 
 $main-text = #333
 $grey = #858585
@@ -10,46 +8,59 @@ $accent-color = #FFD93E
 
 html
     color $main-text
-    font-family: 'Roboto', sans-serif;
-    font-size 1em
-    line-height 1.4
+    font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+    font-size 15px
+    line-height 22px
     background-color white
 
 body
-    height 100vh
     margin 50px
 
-button
-    background none
-    border none
-    cursor pointer
-    outline none
-
-input
-    border none
-
-
-.btn-add-node
-    border-width 2px
-    border-style solid
-    border-color rgba(255, 217, 62, .6)
-    color $main-text
-    padding 6px 10px
-    border-radius 4px
-
-    &:hover, &:active
-        border-color rgba(255, 217, 62, 1)
-
+.add-root-item
+    padding 8px 16px
+    border-radius 2px
+    border 1px lightgrey solid
+    background white
 
 .item
+
     &__input
-        margin 4px 0
+        margin-right 8px
+        padding 2px 4px
+        border none
+        border-bottom 2px transparent solid
         &:focus
-            border-bottom 1px solid $grey
+            outline none
+            border-color blue
 
     &__btn
-        border 1px solid $grey
+        padding 0
+        border none
+        background none
+        outline none
+        cursor pointer
+        & + &
+            margin-left 4px
 
+    &__id
+        margin-left 8px
+        padding 2px 6px
+        border-radius 2px
+        background cornflowerblue
+        font-size 12px
+        font-weight bold
+        color white
+
+    &__children
+        margin-left -13px
+        border-left 1px lightgrey dotted
+        & > .item:first-child
+            margin-top 8px
+        & > .item:last-child
+            margin-bottom 24px
+
+    & + &
+        margin-top 6px
 
 .hidden
     display none

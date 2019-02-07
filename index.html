@@ -5,12 +5,15 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <title>MenuTree example</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="css/index.styl" rel="stylesheet" />
     </head>
 
     <body>
-        <button type="button" class="btn-add-node" data-action="add-into-root">Add Node</button>
-        <ul class="root hidden"></ul>
+        <div data-id="1" class="root">
+            <button type="button" data-action="add" class="add-root-item">Add Node</button>
+            <ul></ul>
+        </div>
         <script src="src/index.js"></script>
     </body>
 </html>
