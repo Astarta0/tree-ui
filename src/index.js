@@ -20,7 +20,6 @@ try {
             renderItem(itemObject, parentNode);
         });
 } catch (err) {
-    console.log(err);
     const rootItem = {
         id: ROOT_ID,
         children: []
